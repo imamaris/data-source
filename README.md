@@ -75,3 +75,27 @@ For more detailed instructions on setting up Airflow with Docker, you can refer 
 
 ## Conclusion
 You have now successfully set up the data ingestion pipeline using Python scripts and Airflow. You can customize the pipeline and extend its functionality as needed. If you encounter any issues or have questions, please refer to the documentation or contact the system administrator.
+
+# Mini Application
+
+## Installation
+First, you'll need to install necessary packages. Run the following command:
+
+```bash
+pip install -r requirements.txt
+
+## Setup Instructions
+
+- Before running the application, make sure to configure your own database connection parameters. Modify the following variables in the main.py file:
+     ```
+     DB_USERNAME = '<DB_USERNAME>'
+     DB_PASSWORD = '<DB_PASSWORD>'
+     DB_HOST = '<DB_HOST>'
+     DB_NAME = '<DB_NAME>'
+     PORT = '<PORT>'
+     ```
+
+## Running the Application
+- You can run this FastAPI application using Uvicorn. Execute the following command:
+``` uvicorn main:app --reload ```
+
